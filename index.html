@@ -4,20 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Celebrare</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" />
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1 class="heading">Celebrare Photo Editor</h1>
     <div class="pattern">
-
       <div class="controls">
         <input type="file" id="image-upload" accept="image/*" />
         <div class="custom-dropdown">
           <button class="dropdown-button">
             Select Frame
-  
+
             <span class="dropdown-arrow"></span>
           </button>
           <div class="dropdown-content">
@@ -66,10 +68,21 @@
         </div>
       </div>
     </div>
+    <!-- <div class="cropper-container" style="display: none">
+      <img id="image-to-crop" src="" alt="Image to Crop" />
+      <button id="crop-button">Crop</button>
+    </div> -->
     <div class="cropper-container" style="display: none;">
-        <img id="image-to-crop" src="" alt="Image to Crop" />
-        <button id="crop-button">Crop</button>
-    </div>
+      <img id="image-to-crop" src="" alt="Image to Crop" />
+      <div class="cropper-controls">
+        <button id="rotate-left-button"">Rotate Left</button>
+        <button id="rotate-right-button"">Rotate Right</button>
+        <button id="flip-horizontal-button"">Flip Horizontal</button>
+        <button id="flip-vertical-button"">Flip Vertical</button>
+        <button id="crop-button"">Crop</button>
+      </div>
+  </div>
+  
     <div class="shape-container">
       <div class="shape">
         <img
@@ -81,9 +94,8 @@
         <img class="shape-mask" src="" alt="Shape Mask" />
       </div>
     </div>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
     <script src="script.js"></script>
-
   </body>
 </html>
