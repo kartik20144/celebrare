@@ -125,15 +125,15 @@ body {
     display: none;
 }
 
-/* General styles */
+
 .cropper-container {
     padding: 15px;
     border-radius: 10px;
-    width: 100%; /* Adjust to full width */
-    max-width: 500px; /* Ensure it doesn't exceed 500px */
+    width: 100%; 
+    max-width: 500px;
     height: 100%;
     max-height: 400px;
-    margin: 0 auto; /* Center the cropper container */
+    margin: 0 auto; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,9 +141,9 @@ body {
 }
 
 #image-to-crop {
-    max-width: 100%; /* Ensure the image fits within the container */
+    max-width: 100%; 
     max-height: 100%;
-    display: block; /* Ensure the image is centered */
+    display: block; 
 }
 
 .pattern {
@@ -220,7 +220,7 @@ input {
     background-color: #9d2424;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
     .controls {
         flex-direction: column;
@@ -239,7 +239,7 @@ input {
 
     .cropper-container {
         width: 100%;
-        max-width: 400px; /* Adjust the max width */
+        max-width: 400px; 
         max-height: 400px;
     }
 
@@ -284,7 +284,7 @@ input {
 
     .cropper-container {
         width: 100%;
-        max-width: 280px; /* Adjust the max width */
+        max-width: 280px; 
         max-height: 280px;
     }
 
